@@ -4,45 +4,9 @@ data Loading, Traning Model, Testing
 https://github.com/LinkedInLearning/pytorch-essential-training-deep-learning-2706322/tree/main
 
 #@title Import and transform for training data set
-
-          from torchvision import transforms
-          
-          from torchvision.datasets import CIFAR10
-          
-          train_data_path = "./train/"
-          
-          train_transforms = transforms.Compose([
-            transforms.Resize(64),
-            transforms.ToTensor(),
-            transforms.Normalize(
-                mean=(0.4914, 0.4822, 0.4465),
-                std=(0.2023, 0.1994, 0.2010))])
-          
-          training_data = CIFAR10(train_data_path,
-                               train=True,
-                               download=True,
-                               transform=train_transforms)
-
-                     
+                    
 
 #@title Defining transform for testing data set
-
-                    test_data_path = "./test/"
-                    
-                    test_transforms = transforms.Compose([
-                      transforms.ToTensor(),
-                      transforms.Normalize(
-                          (0.4914, 0.4822, 0.4465),
-                          (0.2023, 0.1994, 0.2010))])
-                    
-                    test_data = CIFAR10(test_data_path,
-                                         train=False,
-                                         download=True,
-                                         transform=train_transforms)
-                    
-                    print(test_data)
-
-
 
 Data batching
 
