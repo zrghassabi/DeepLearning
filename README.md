@@ -220,15 +220,25 @@ Model development and training
 Validation and testing
 
 #@title Import libraries and dataset
+
           import torch
+          
           from torchvision import transforms
+          
           from torchvision.datasets import CIFAR10
+          
           from torch.utils.data import DataLoader
+          
           from torch.utils.data import random_split
+          
           from torchvision import models
+          
           from torch import optim
+          
           import torch.nn as nn
+          
           import torch.optim as optim
+          
           import torch.nn.functional as F
      
 
