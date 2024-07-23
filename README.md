@@ -55,14 +55,7 @@ Model development and training
 
 #@title Import libraries and dataset
           
-          import torch
-          
-          from torchvision import transforms
-          
-          from torchvision.datasets import CIFAR10
-          
-          from torch.utils.data import DataLoader
-          
+                 
           from torchvision import models
           
           from torch import optim
