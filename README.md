@@ -25,7 +25,22 @@ https://github.com/LinkedInLearning/pytorch-essential-training-deep-learning-270
 
                      
 
+#@title Defining transform for testing data set
 
+                    test_data_path = "./test/"
+                    
+                    test_transforms = transforms.Compose([
+                      transforms.ToTensor(),
+                      transforms.Normalize(
+                          (0.4914, 0.4822, 0.4465),
+                          (0.2023, 0.1994, 0.2010))])
+                    
+                    test_data = CIFAR10(test_data_path,
+                                         train=False,
+                                         download=True,
+                                         transform=train_transforms)
+                    
+                    print(test_data)
 
 
 https://www.kaggle.com/timoboz/data-science-cheat-sheets
