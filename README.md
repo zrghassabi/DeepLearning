@@ -314,6 +314,37 @@ Validation and testing
           testloader = torch.utils.data.DataLoader(testset, batch_size=4,
                                                    shuffle=False, num_workers=2)
 
+
+@title Set the model to training mode and evaluation mode for validation
+
+          for epoch in range(10):
+              net.train()  # Set the model to training mode
+              running_loss = 0.0
+              for i, data in enumerate(trainloader, 0):
+                  inputs, labels = data
+                  optimizer.zero_grad()
+                  outputs = net(inputs)
+                  loss = criterion(outputs, labels)
+                  loss.backward()
+                  optimizer.step()
+                  running_loss += loss.item()
+          
+              net.eval()  # Set the model to evaluation mode for validation
+              validation_loss = 0.0
+              correct = 0
+              total = 0
+              with torch.no_grad():
+                  for data in testloader:
+                      images, labels = data
+                      outputs = net(images)
+                      loss = criterion(outputs, labels)
+                      validation_loss += loss.item()
+                      _, predicted = torch.max(outputs.data, 1)
+                      total += labels.size(0)
+                      correct += (predicted == labels).sum().item()
+          
+              print(f'Epoch {epoch + 1}, Training Loss: {running_loss / len(trainloader)}, Validation Loss: {validation_loss / len(valloader)}, Validation Accuracy: {100 * correct / total}%')
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
