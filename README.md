@@ -177,7 +177,7 @@ Model development and training
 
 #@title Train the network
 
-for epoch in range(10):  # loop over the dataset multiple times
+    for epoch in range(10):  # loop over the dataset multiple times
 
     running_loss = 0.0
     
