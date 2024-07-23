@@ -151,10 +151,10 @@ Model development and training
               
                   print(f'[{epoch + 1}, {i + 1:5d}] loss: {running_loss / 2000:.3f}')
                   
-              running_loss = 0.0
+                  running_loss = 0.0
                   
       
-          print('Finished Training')     
+     print('Finished Training')     
 
 
 
