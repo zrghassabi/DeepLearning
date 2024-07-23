@@ -1,5 +1,8 @@
 # DeepLearning
 
+data Loading, Traning Model, Testing
+https://github.com/LinkedInLearning/pytorch-essential-training-deep-learning-2706322/tree/main
+
 https://www.kaggle.com/timoboz/data-science-cheat-sheets
 
 
