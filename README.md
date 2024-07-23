@@ -146,6 +146,7 @@ Model development and training
                   x = self.fc3(x)
                   
                   return x
+
                   
 #@title Instantiate the Model
 
@@ -265,15 +266,19 @@ Validation and testing
      
 
 #@title Instantiate the model
+
           net = Net()
      
 
 #@title Define the loss function and optimizer
+
           criterion = nn.CrossEntropyLoss()
+          
           optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
      
 
 #@title Load and transform the data
+
           transform = transforms.Compose(
               [transforms.ToTensor(),
                transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
