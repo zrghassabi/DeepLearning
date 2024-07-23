@@ -147,15 +147,19 @@ Model development and training
                   
                   return x
                   
- #@title Instantiate the Model
-net = Net()
+#@title Instantiate the Model
+
+          net = Net()
 
 # define the Loss Function and Optimizer
-criterion = nn.CrossEntropyLoss()
-optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
+
+          criterion = nn.CrossEntropyLoss()
+          
+          optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
      
 
 #@title Load and transform the data
+
 transform = transforms.Compose(
     [transforms.ToTensor(),
      transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
