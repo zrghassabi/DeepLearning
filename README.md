@@ -105,15 +105,15 @@ Model development and training
                   return x
 
                   
-#@title Instantiate the Model
+  #@title Instantiate the Model
 
-          net = Net()
+    net = Net()
 
-# define the Loss Function and Optimizer
+    # define the Loss Function and Optimizer
 
-          criterion = nn.CrossEntropyLoss()
-          
-          optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
+    criterion = nn.CrossEntropyLoss()
+    
+    optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
      
    
 
