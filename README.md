@@ -4,9 +4,13 @@ data Loading, Traning Model, Testing
 https://github.com/LinkedInLearning/pytorch-essential-training-deep-learning-2706322/tree/main
 
 #@title Import and transform for training data set
+
 from torchvision import transforms
+
 from torchvision.datasets import CIFAR10
+
 train_data_path = "./train/"
+
 train_transforms = transforms.Compose([
   transforms.Resize(64),
   transforms.ToTensor(),
