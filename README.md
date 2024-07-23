@@ -144,8 +144,7 @@ Model development and training
         optimizer.step()
         
 
-# print statistics
-
+        # print statistics
         running_loss += loss.item()
         
         if i % 2000 == 1999:    # print every 2000 mini-batches
