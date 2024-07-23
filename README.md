@@ -183,7 +183,7 @@ for epoch in range(10):  # loop over the dataset multiple times
     
     for i, data in enumerate(trainloader, 0):
     
-# get the inputs; data is a tuple of [inputs, labels]
+        # get the inputs; data is a tuple of [inputs, labels]
         
         inputs, labels = data
 
@@ -213,10 +213,10 @@ for epoch in range(10):  # loop over the dataset multiple times
             running_loss = 0.0
             
 
-print('Finished Training')     
+          print('Finished Training')     
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 https://www.kaggle.com/timoboz/data-science-cheat-sheets
