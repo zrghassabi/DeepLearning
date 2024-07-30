@@ -202,3 +202,7 @@ SuperCheetSheet for Deep Learning : https://www.kaggle.com/timoboz/data-science-
 
 
 https://media-exp2.licdn.com/dms/document/C4E1FAQFCUDAxHf_mYA/feedshare-document-pdf-analyzed/0/1657472777326?e=1658361600&v=beta&t=RB71o9MDqt43VpWBYAGKH9Cl5Br6rFVP1XocwGlM3Ic
+
+Transfer Learning
+
+https://www.linkedin.com/learning/transfer-learning-for-images-using-pytorch-essential-training/vgg16?autoSkip=true&resume=false
