@@ -208,3 +208,8 @@ Transfer Learning using VGG16 and CIFAR10 based on course :
 This files are about loading dataset CIFAR10 and using pretrained VGG16. It includes freezing feature extractor and traing Fully connected NN. It also unfreezes some layers from Feature Extractor to train NN and It shows effect of choosing appropraite learning rate on Accuracy of classiication.
 
 https://www.linkedin.com/learning/transfer-learning-for-images-using-pytorch-essential-training/vgg16?autoSkip=true&resume=false
+
+
+GAN 
+
+
