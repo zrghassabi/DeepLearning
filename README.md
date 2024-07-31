@@ -212,4 +212,4 @@ https://www.linkedin.com/learning/transfer-learning-for-images-using-pytorch-ess
 
 GAN 
 
-
+https://www.linkedin.com/learning/ai-workshop-hands-on-with-gans-with-deep-convolutional-networks/types-of-convolutional-layers?autoSkip=true&resume=false
